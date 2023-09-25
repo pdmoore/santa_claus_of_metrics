@@ -1,4 +1,4 @@
-//Copyright (c) 2023, Pauk Moore
+//Copyright (c) 2023, Paul Moore
 //All rights reserved.
 //
 //This source code is licensed under the BSD-style license found in the
