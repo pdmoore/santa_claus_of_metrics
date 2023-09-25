@@ -1,3 +1,9 @@
+#Copyright (c) 2023, Paul Moore
+#All rights reserved.
+#
+#This source code is licensed under the BSD-style license found in the
+#LICENSE file in the root directory of this source tree. 
+
 package gildedrose;
 
 import org.junit.jupiter.api.Test;
