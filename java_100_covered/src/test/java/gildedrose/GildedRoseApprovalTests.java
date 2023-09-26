@@ -18,6 +18,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //@UseReporter(DiffMergeReporter.class)
 public class GildedRoseApprovalTests {
 
+    public static final String BACKSTAGE_PASS = "Backstage passes to a TAFKAL80ETC concert";
+    public static final String LEGENDARY = "Sulfuras, Hand of Ragnaros";
+
     @Test
     public void test_UpdateQuality_SingleItem_AtSellin_NoQuality() {
         // Arrange
@@ -39,7 +42,7 @@ public class GildedRoseApprovalTests {
     public void test_UpdateQuality_SingleItem() {
         CombinationApprovals.verifyAllCombinations(
                 this::doUpdateQuality,
-                new String[] {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"},
+                new String[] {"foo", "Aged Brie", BACKSTAGE_PASS, LEGENDARY},
                 new Integer[] {-1, 0, 1, 2, 3, 4, 5, 6, 9, 10, 11},    // SellIn
                 new Integer[] { 0, 1, 5, 10, 49, 50 }       // Quality
         );
